@@ -1,0 +1,56 @@
+
+*{
+    /*实际开发中请引入自己的reset样式*/
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    /*这里是以750的设计稿来计算的 vw 值, 640的情况见 README.md 文件*/
+    /*这样设计稿中的尺寸   稿尺寸/ 2 / 100 = rem 值*/
+    /*font-size: 26.61vw;*/
+    /*这样设计稿上的    设计稿尺寸 / 100 = rem */
+    font-size: 13.333vw;
+
+}
+
+body{
+    /*width: 1rem;*/
+    /*font-size: 1rem;*/
+    /*background-color: cyan;*/
+
+}
+/*
+
+div{
+    !*font-size: 26.667vw; 的情况*!
+    font-size: 1rem;
+    width: 1rem;  !*设计稿上的尺寸为200px, 浏览器显示为100px*!
+    height: 1rem;
+    background-color: yellow;
+}
+
+*/
+
+
+div{
+     /*font-size: 13.333vw; 的情况*/
+     width: 2rem;  /*设计稿上的尺寸为200px，浏览器显示为100px*/
+     height: 2rem;
+     font-size: .4rem;
+     background-color: blue;
+ }
+
+
+
+
+
+
+
+
+
