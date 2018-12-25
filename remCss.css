@@ -13,11 +13,21 @@ html,body{
 html{
     /*这里是以750的设计稿来计算的 vw 值, 640的情况见 README.md 文件*/
     /*这样设计稿中的尺寸   稿尺寸/ 2 / 100 = rem 值*/
-    /*font-size: 26.61vw;*/
+    /*font-size: 26.667vw;*/
     /*这样设计稿上的    设计稿尺寸 / 100 = rem */
-    font-size: 13.333vw;
+    font-size: 13.333vw; /*750px设计稿，如果是650px设计稿，写font-size: 15.625vw*/
 
 }
+
+/*通过媒体查询的方式限制无线放大， 当屏幕宽度大于设计稿尺寸的时候保持font-size: 100px,
+ 如果你想一直放大，就把这段代码去掉*/
+@media screen and (min-width: 750px) { /*根据设计稿尺寸写,750px 或 640px*/
+    html {
+        font-size: 100px;
+    }
+}
+
+
 
 body{
     /*width: 1rem;*/
